@@ -1,12 +1,6 @@
-/*
-COLORS
-c3073f  darker maroonish
-d12d5e  lighter maroonish
-
-
-*/
-
-/* Page Reset Start */
+/* ======================
+Page Reset
+========================*/
 
 * {
 	box-sizing: border-box;
@@ -22,13 +16,9 @@ body {
 	margin: 0;
 }
 
-.white:last-child {
-	padding-bottom: 200px;
-}
-
-/* Page Reset End */
-
-/* Navigation Start */
+/* ======================
+Header
+========================*/
 
 nav {
 	position: fixed;
@@ -51,39 +41,6 @@ nav p {
 	font-size: 80%;
 }
 
-ul {
-	list-style-type: none;
-	padding: 0;
-	margin-top: 0;
-	margin-bottom: 0;
-}
-
-li {
-	display: inline;
-	border-right: 2px solid white;
-	font-size: 90%;
-	padding-right: 5px;
-	color: white;
-}
-
-li:last-child {
-	border: 0;
-}
-
-ul li a {
-	color: white;
-	text-decoration: none;
-}
-
-ul li a:hover {
-	background-color: white;
-	color: #0784c3;
-}
-
-/* Navigation End */
-
-/* Main Start */
-
 nav p {
 	letter-spacing: 1.75px;
 	margin: 0;
@@ -92,6 +49,10 @@ nav p {
 h1 {
 	margin: 0;
 }
+
+/* ======================
+Bio Zone
+========================*/
 
 #nameZone {
 	display: flex;
@@ -104,6 +65,10 @@ h1 {
 p {
 	font-size: 2rem;
 }
+
+/* ======================
+Project Zone
+========================*/
 
 section {
 	width: 100%;
@@ -132,13 +97,6 @@ section {
 img:hover {
 	transform: scale(1.1);
 	transition: transform 0.5s ease-in-out;
-}
-
-h1,
-h2,
-h3,
-nav {
-	font-family: 'Ovo', serif;
 }
 
 .indProject {
@@ -192,7 +150,24 @@ h2 {
 #projectWrapper {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-	grid-gap: 5px;
+	grid-gap: 25px;
 }
 
-/* Main End */
+/* ======================
+Mobile Size
+========================*/
+
+@media screen and (max-width: 500px) {
+	#projectWrapper {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	}
+	.projImg {
+		height: 20rem;
+	}
+	.white p {
+		padding: 5px;
+		text-align: justify;
+		line-height: 150%;
+	}
+}
