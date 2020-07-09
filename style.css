@@ -53,12 +53,8 @@ nav {
 }
 
 nav p {
-	margin: 0;
+	margin-top: 0;
 	font-size: 80%;
-}
-
-h1 {
-	margin: 0;
 }
 
 ul {
@@ -97,12 +93,21 @@ ul li a:hover {
 .indProject {
 }
 
-header {
-	padding: 3%;
+nav p {
+	letter-spacing: 1.75px;
+	margin: 0;
 }
 
-header p {
-	letter-spacing: 1.75px;
+h1 {
+	margin: 0;
+}
+
+#nameZone {
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+	padding: 5px 0 5px 0;
 }
 
 p {
@@ -117,17 +122,15 @@ section {
 	color: white;
 }
 
-section:first-child {
-}
-
-img {
-	border: 2px solid #4e4e50;
-	max-width: 100%;
-	height: 20rem;
-}
-
 #headshot {
 	border-radius: 50%;
+	border: 2px solid #4e4e50;
+	height: auto;
+	width: 30rem;
+}
+
+.projImg {
+	height: 30rem;
 }
 
 .white img:hover {
@@ -157,12 +160,24 @@ h3 {
 }
 
 .white {
+	margin: 0 auto;
+	margin-top: 80px;
+	width: 85%;
 	background-color: white;
 	color: black;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+#photos {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .white p {
-	padding: 10px;
+	padding: 30px;
 	text-align: left;
 	line-height: 150%;
 }
@@ -181,7 +196,7 @@ h3 {
 
 .icon {
 	border: 0;
-	height: 10rem;
+	height: 7.5rem;
 	width: auto;
 	padding: 15px;
 }
@@ -190,53 +205,10 @@ h3 {
 	padding-top: 90px;
 }
 
+#projectWrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-gap: 5px;
+}
+
 /* Main End */
-
-@media screen and (min-width: 400px) {
-	.projImg {
-		height: auto;
-	}
-	h3 {
-		font-size: 1.5rem;
-	}
-	#projectWrapper {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-	}
-}
-
-@media screen and (min-width: 800px) {
-	nav {
-		justify-content: space-evenly;
-		flex-direction: row;
-	}
-
-	nav ul {
-		align-self: center;
-	}
-
-	header {
-		padding: 0%;
-	}
-
-	#projectWrapper {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-	}
-
-	section:first-child {
-	}
-
-	#about p,
-	#projects p {
-		padding: 0 15%;
-	}
-
-	h3 {
-		font-size: 2.5rem;
-	}
-
-	.links {
-		padding-top: 30px;
-	}
-}

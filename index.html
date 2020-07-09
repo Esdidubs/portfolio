@@ -11,30 +11,36 @@
 </head>
 <body>
     <nav>
-        <header><h1>Steven Ward</h1>
-            <p>Front End Developer</p></header>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div id="nameZone">
+            <h1>Steven Ward</h1>
+            <p>Front End Developer</p>
+        </div>
+        
+        
     </nav>
     <main>
         <section class="white" id="about">
-            <header><h2 class="links">About Me</h2></header>
-            <img src="./images/headshot.jpg" alt="My Picture" id="headshot">
-            <p>My programming experience comes from a blend of online courses like Bloc and Codecademy, working in <span class="emphasise">C# and GML</span> for game 
-                projects in Unity and GameMaker Studio, and automating processes through macros and logic at my last few jobs. 
-                I've worked with <span class="emphasise">HTML, CSS, JavaScript, jQuery, C#, GML, SQL, and VBA macros</span>, and a lot of my focus has been on 
-                improving existing processes to make them more efficient, which is one of my passions. In my free time, I typically 
-                can be found reading a book, working on the design for my next game, or spending time with my wife and toddler. 
-                I recently ran a <span class="emphasise">successful Kickstarter campaign</span> for my party trivia game, Standing Out, and have released it to the public.
-            </p>
-            <p>In my past few jobs, I've worked cross-functionally with multiple departments in order to improve our processes and increase communication within
-                the companies. I enjoy this type of collaboration within a position because I believe it brings a company together as a single unit across
-                multiple teams.
-            </p>
+            <div id="photos">
+                <img src="./images/headshot.jpg" alt="My Picture" id="headshot">
+                <div>
+                    <a href="mailto:sward3644@gmail.com" target="_blank"><img class="icon" src="images/gmail.png" alt="Gmail logo"></a>            
+                <a href="https://github.com/esdidubs" target="_blank"><img class="icon" src="images/GitHub-Mark-120px-plus.png" alt="GitHub logo"></a>
+                <a href="https://www.linkedin.com/in/esdidubs" target="_blank"><img class="icon" src="images/LI-In-Bug.png" alt="LinkedIn logo"></a>
+                </div>
+                
+            </div>
+            <div>
+                <p>My programming experience comes from a blend of online courses like Bloc and Codecademy, working in <span class="emphasise">C# and GML</span> for game 
+                    projects in Unity and GameMaker Studio, and automating processes through macros and logic at my last few jobs. 
+                    I've worked with <span class="emphasise">HTML, CSS, JavaScript, jQuery, C#, GML, SQL, and VBA macros</span>, and a lot of my focus has been on 
+                    improving existing processes to make them more efficient, which is one of my passions. In my free time, I typically 
+                    can be found reading a book, working on the design for my next game, or spending time with my wife and toddler. 
+                    I recently ran a <span class="emphasise">successful Kickstarter campaign</span> for my party trivia game, Standing Out, and have released it to the public.
+                </p>                
+            </div>
+            
         </section>
+        
         <section class="black" id="projects">
             <header><h2 class="links">Projects</h2></header>
             <div id="projectWrapper">
@@ -85,12 +91,7 @@
             </div>
             
         </section>
-        <section class="white" id="contact">
-            <header><h2 class="links">Contact</h2></header>
-            <a href="mailto:sward3644@gmail.com" target="_blank"><img class="icon" src="images/gmail.png" alt="Gmail logo"></a>            
-            <a href="https://github.com/esdidubs" target="_blank"><img class="icon" src="images/GitHub-Mark-120px-plus.png" alt="GitHub logo"></a>
-            <a href="https://www.linkedin.com/in/esdidubs" target="_blank"><img class="icon" src="images/LI-In-Bug.png" alt="LinkedIn logo"></a>
-        </section>
+        
     </main>
 </body>
 </html>
