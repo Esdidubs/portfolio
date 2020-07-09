@@ -22,12 +22,6 @@ body {
 	margin: 0;
 }
 
-h2,
-h3,
-section {
-	text-align: center;
-}
-
 .white:last-child {
 	padding-bottom: 200px;
 }
@@ -90,9 +84,6 @@ ul li a:hover {
 
 /* Main Start */
 
-.indProject {
-}
-
 nav p {
 	letter-spacing: 1.75px;
 	margin: 0;
@@ -117,9 +108,7 @@ p {
 section {
 	width: 100%;
 	min-height: 20rem;
-	background-color: rgb(23, 22, 22);
 	padding: 2%;
-	color: white;
 }
 
 #headshot {
@@ -131,9 +120,16 @@ section {
 
 .projImg {
 	height: 30rem;
+	border: 2px solid black;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	transition: box-shadow 0.5s ease-in-out;
 }
 
-.white img:hover {
+.projImg:hover {
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+img:hover {
 	transform: scale(1.1);
 	transition: transform 0.5s ease-in-out;
 }
@@ -145,18 +141,17 @@ nav {
 	font-family: 'Ovo', serif;
 }
 
+.indProject {
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
 h2 {
-	color: #0784c3;
-}
-
-section p a {
-	font-size: 125%;
-	font-weight: bold;
-	color: #0784c3;
-}
-
-h3 {
-	color: white;
+	font-size: 3rem;
 }
 
 .white {
@@ -182,13 +177,6 @@ h3 {
 	line-height: 150%;
 }
 
-.black p {
-	padding: 0 10px;
-	margin: 0;
-	line-height: 150%;
-	text-align: left;
-}
-
 .emphasise {
 	color: #0784c3;
 	font-weight: bold;
@@ -199,10 +187,6 @@ h3 {
 	height: 7.5rem;
 	width: auto;
 	padding: 15px;
-}
-
-.links {
-	padding-top: 90px;
 }
 
 #projectWrapper {
